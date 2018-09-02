@@ -1,0 +1,31 @@
+.flexRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &__small1 {
+        @mixin atMedium {flex-basis: 33.33%;}
+        &--gap {@mixin atMedium {padding-right: 25px;}}       
+    }
+
+    &__small2 {
+        @mixin atMedium {flex-basis: 37%;}
+        &--gap {@mixin atMedium {padding-right: 25px;}}             
+    }
+
+    
+
+
+    &__large1 {
+        @mixin atMedium {flex-basis: 66.66%; }
+        &--gap {{@mixin atMedium {padding-right: 25px;}}}
+    }
+    &__large2 {
+        @mixin atMedium {flex-basis: 63%; }
+
+        &--gap {{@mixin atMedium {padding-right: 25px;}}}
+    }
+}
+
