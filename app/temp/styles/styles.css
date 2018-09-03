@@ -613,6 +613,20 @@ padding: 1.2rem;
 
 }
 
+.headline--features {
+        font-size: 1.875rem;
+        font-weight: 300;
+        margin-bottom: .8rem;
+        text-align: center;
+    }
+
+@media (min-width: 800px) {
+
+.headline--features {
+            text-align: start
+    }
+    }
+
 @media (min-width: 530px) {
 
 .headline {
@@ -730,7 +744,8 @@ padding: 1.2rem;
 
 .generic-content-container p {
         line-height: 1.65;
-        margin: 1.8rem 0;
+        margin: 0 0 1.8rem 0;
+        font-weight: 300;
     }
 
 @media (min-width: 530px) {
@@ -742,4 +757,92 @@ padding: 1.2rem;
 
 .generic-content-container p a {
         font-weight: 700;
+    }
+
+.section-title {
+    font-size: 2.55rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media (min-width: 530px) {
+    }
+
+.section-title strong {
+        font-weight: 500;
+    }
+
+.section-title__icon {
+        margin-bottom: .6rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+@media (min-width: 530px) {
+
+.section-title__icon {
+            margin-right: .5rem;
+            margin-left: 0;
+            display: inline-block;
+            margin-bottom: 0
+    }
+    }
+
+.grid {
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-row-gap: .5em;
+    grid-column-gap: 5rem;
+
+
+    
+
+}
+
+@media (min-width: 800px) {
+
+.grid {
+        grid-row-gap: 2.5em
+
+
+    
+
+}
+    }
+
+.grid__itemA {
+        margin-top: 2em;
+    }
+
+.grid--2columns {
+
+        grid-template-columns: repeat(1, minmax(250px, 500px));
+
+    }
+
+@media (min-width: 800px) {
+
+.grid--2columns {
+            grid-template-columns: repeat(2, minmax(340px, 400px))
+
+    }
+    }
+
+.grid--item {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+@media (min-width: 800px) {
+
+.grid--item {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: 64px 3fr
+    }
     }
