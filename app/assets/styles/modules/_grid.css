@@ -1,0 +1,42 @@
+.grid {
+    display: grid;
+    justify-content: center;
+    grid-row-gap: .5em;
+    grid-column-gap: 5rem;
+
+    @mixin atMedium {
+        grid-row-gap: 2.5em;
+    }
+
+    &__itemA {
+        margin-top: 2em;
+    }
+
+    &--2columns {
+
+        grid-template-columns: repeat(1, minmax(250px, 500px));
+
+        @mixin atMedium{
+            grid-template-columns: repeat(2, minmax(340px, 400px));
+        }
+
+    }
+
+
+    &--item {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        
+        @mixin atMedium{
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: 64px 3fr;        }
+    }
+
+
+    
+
+}
