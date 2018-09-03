@@ -4,6 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 
     &__small1 {
         @mixin atMedium {flex-basis: 33.33%;}
